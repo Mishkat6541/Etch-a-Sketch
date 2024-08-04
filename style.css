@@ -1,0 +1,38 @@
+body{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  
+
+}
+
+
+header{
+    background-color: darkgoldenrod;
+    box-shadow: 5px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+container{
+    display: flex;
+
+
+}
+
+
+footer{
+    background-color: darkgoldenrod;
+    box-shadow: 5px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+
+
+}
