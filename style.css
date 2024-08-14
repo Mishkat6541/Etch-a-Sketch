@@ -1,38 +1,65 @@
-body{
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
-  
-
+/* Reset margins and padding for a clean slate */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
-header{
+/* Header styling */
+header {
     background-color: darkgoldenrod;
-    box-shadow: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls label, 
+.controls input, 
+.controls button {
+    margin: 0 10px;
+}
+
+/* Container for the Etch-a-Sketch drawing area */
+.container {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
-
-
+    align-items: center;
+    padding: 20px;
 }
 
-container{
-    display: flex;
-
-
+/* Example of a grid inside the container (for Etch-a-Sketch) */
+.grid {
+    display: grid;
+    gap: 1px;
+    width: 400px; /* Size of the drawing area */
+    height: 400px;
+    background-color: white;
 }
 
+.grid div {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
 
-footer{
+/* Footer styling */
+footer {
     background-color: darkgoldenrod;
-    box-shadow: 5px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: sticky;
     bottom: 0;
     left: 0;
     width: 100%;
-
-
-
 }
